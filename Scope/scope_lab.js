@@ -17,4 +17,32 @@ const blockConst = "I'm a block-scoped const";
 
 //Block Scope
 console.log(blockVar);
-console.log(blockLet);
+// console.log(blockLet);
+
+
+// Practice Task
+{
+    var nameVar = "Bilal";
+    let nameLet = "Ahmed";
+    const  nameConst = "Ali"
+
+    console.log("Before Reassing");
+    console.log(nameVar,nameLet,nameConst);
+
+    nameVar = "Noman"
+    nameLet = "Akbar"
+    // nameConst = "Khan" // Assignment to constant variable.
+    console.log("Block Reassing");
+    console.log(nameVar);
+    console.log(nameLet);
+    console.log(nameConst);
+}
+
+
+var nameVar = "Bilal";
+let nameLet = "Ahmed";
+const  nameConst = "Ali"
+
+
+console.log("Outside the block");
+console.log(nameVar,nameLet,nameConst);
